@@ -10,8 +10,8 @@ const Category = () => {
     const getCategory = async () =>{
         const response = await fetch(url)
         const data = await response.json()
-        const amine = data.categories
-        setCategory(amine)
+        const mealCategory = data.categories
+        setCategory(mealCategory)
         
     }
     useEffect(() =>{

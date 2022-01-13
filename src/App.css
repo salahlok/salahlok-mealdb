@@ -93,7 +93,6 @@ html {
     line-height: 1.25;
     margin-bottom: 0.75rem;
   }
-
   p {    
     color: var(--clr-grey-5);    
   }
@@ -223,6 +222,7 @@ html {
   }
 
 
+  
 /*Search form*/
 .search{
   margin-top: 2em ;
@@ -335,6 +335,7 @@ html {
   }
 }
 
+
 /* Meal list*/
 
 .meal-list {
@@ -356,6 +357,11 @@ html {
   column-gap: 2rem;
   /* align-items: start; */
 }
+.meal-error{
+  text-align: center;  
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 576px) {
   .meals-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
@@ -421,6 +427,11 @@ html {
   flex-direction: column;
 }
 
+.loading-title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .dot{
   width: 25px;
   height: 25px;
@@ -438,6 +449,7 @@ html {
 
 #anim3{animation: dotanime 0.6s 0.1s infinite;
 }
+
 @keyframes dotanime{
   0%{transform: translateY(0%);}
   25%{transform: translateY(-50%);}
@@ -445,10 +457,7 @@ html {
   75%{transform: translateY(-10%);}
   100%{transform: translateY(0%);}
 }
-.loading-title{
-  font-size: 2rem;
-  font-weight: 600;
-}
+
 
 
 
@@ -496,6 +505,7 @@ html {
   transform: rotate(360deg);
 }
 
+
 @media screen and (max-width: 900px) {
   .hero-content{
     width: 40%;
@@ -536,15 +546,15 @@ html {
     font-size: 0.9rem;
   }
 }
-@media screen and (max-width:600px) {
-  
+
+@media screen and (max-width:600px) {  
   .hero-image img{
     width: 100%;
   }
 }
 
 
-/*Single*/
+/*Single Meal*/
 
 .single{
   margin: 3em 0;
@@ -554,7 +564,6 @@ html {
 .single h1{
   text-align: center;
   font-size: 2.5rem;
-
 }
 
 .single-container{  
@@ -613,7 +622,6 @@ html {
 .single-content p a{
   cursor: pointer;
 }
-
 .watch{
   width: 100%;
   display: flex;
@@ -631,6 +639,8 @@ html {
     width: 90%;
   }
 }
+
+
 /*Footer*/
 .footer{
   width: 100%;
@@ -652,7 +662,6 @@ html {
   margin: 0 auto;
 
 }
-
 .social{
   font-size: 2rem;
   margin: 0 0.5em;
@@ -680,6 +689,7 @@ html {
   }
 }
 
+/*ABOUT */
 .about{
   width: 100%;
   height: 100%;
@@ -724,11 +734,10 @@ html {
 
 /*Category*/
 
-
 .category-card-grid{  
   display: grid;
   grid-gap:16px;
-  padding: 16px;
+  
 }
 .card-details{
   padding:0.5em 1em;
@@ -745,7 +754,6 @@ html {
   -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 }
 
-
 @media screen and (min-width: 770px) {
   .category-card-grid{
     grid-template-columns: repeat(2,1fr);
@@ -756,7 +764,6 @@ html {
     grid-template-columns: repeat(3,1fr);
     }
 }
-
 
 .category{
   width: 100%;
@@ -777,7 +784,6 @@ html {
 .card-details p a {
   cursor: pointer;
 }
-
 
 
 /*Contact*/
@@ -828,8 +834,7 @@ html {
   transform: translateY(-50%);
 }
 
-.contact-right-side{
-  
+.contact-right-side{  
   width: 75%;
   margin-left: 75px;
 }
@@ -908,7 +913,6 @@ html {
   cursor: pointer;
 }
 
-
 @media (max-width:980px){
   .contact-container{
     padding: 30px 35px 40px 35px;
@@ -917,8 +921,7 @@ html {
 @media (max-width:826px){
   .contact-container{
     margin: 40px 0;
-    height: 100%;
-    
+    height: 100%;    
   }
 
   .contact-content{
@@ -938,4 +941,24 @@ html {
     width: 100%;
     margin-left: 0;
   }
+}
+
+
+/*Error*/
+.error{
+  width: 100%;
+  height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content{
+  margin-top: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+.error-content h1{
+  text-align: center;  
+  font-size: 2rem;
 }

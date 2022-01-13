@@ -10,7 +10,7 @@ const Meal = ({strMeal,strArea,strMealThumb,idMeal}) => {
             <div className="meal-footer">
                 <h1>{strMeal}</h1>
                 <h4>{strArea}</h4>
-                <Link to={`/meal/${idMeal}`} className='btn'>details</Link>
+                <Link to={`/meal/${idMeal}`} className='btn'>DETAILS</Link>
             </div>
         </div>
     )

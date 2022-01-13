@@ -9,7 +9,7 @@ const Footer = () => {
                     <a href="https://www.themealdb.com/api.php">mealDB</a>
                 </div>
                 <div className="footer-social">
-                    <a href="https://www.facebook.com" className="social"><TiSocialFacebook /></a>
+                    <a href="https://www.facebook.com/salah.eddine.376043" className="social"><TiSocialFacebook /></a>
                     <a href="https://www.instagram.com/salah.lok/" className="social"><TiSocialInstagram /></a>
                     <a href="https://github.com/" className="social"><TiSocialGithub /></a>
                 </div>

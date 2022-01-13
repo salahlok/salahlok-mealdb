@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Category from './Pages/Category';
 import Contact from './Pages/Contact';
-
+import Error from './Pages/Error';
 
 function App() {
   
@@ -30,6 +30,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="*">
+              <Error />
             </Route>
         </Switch>      
       <Footer />

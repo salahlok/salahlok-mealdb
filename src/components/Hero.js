@@ -1,5 +1,7 @@
 import React from 'react'
 import Dish from './dish.png'
+
+
 const Hero = () => {
     return (
         <div className="hero">

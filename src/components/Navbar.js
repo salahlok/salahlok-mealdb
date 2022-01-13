@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <p className='logo'>
-              <Link to='/'>RECIPE</Link>
+              <Link to='/'>RECIPE API</Link>
           </p>
           <button className='nav-toggle' onClick={toggleLinks}>
             <FaBars />
@@ -38,10 +38,10 @@ const Navbar = () => {
                 <Link to="/about">ABOUT</Link>
             </li>
             <li>
-                <Link to="/categories">Category</Link>
+                <Link to="/categories">CATEGORY</Link>
             </li>
             <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>        

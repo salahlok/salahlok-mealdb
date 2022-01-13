@@ -2,7 +2,6 @@ import React,{useState, useEffect} from 'react'
 import SearchForm from '../components/SearchForm'
 import MealList from '../components/MealList'
 import Loading from '../components/Loading'
-import Category from './Category'
 import Hero from '../components/Hero'
 
 const url = 'https://www.themealdb.com/api/json/v1/1/search.php?s='
@@ -11,15 +10,15 @@ const url = 'https://www.themealdb.com/api/json/v1/1/search.php?s='
 const Home = () => {
 
   const [loading,setLoading] = useState(true)
-  const [caty,setCaty] = useState([])
+  const [food,setFood] = useState([])
   const [search,setSearch] = useState('')
 
 
   const fetchData = async() =>{
     const response = await fetch(`${url}${search}`)
     const data = await response.json()
-    const amine = data.meals
-    setCaty(amine)
+    const recipe = data.meals
+    setFood(recipe)
     setLoading(false)
     
     
@@ -37,7 +36,7 @@ const Home = () => {
         <main>
           <Hero/>       
           <SearchForm setSearch={setSearch}/>               
-          <MealList caty={caty}/>            
+          <MealList food={food}/>            
         </main>
     )
 }
